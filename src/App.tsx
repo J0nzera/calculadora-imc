@@ -48,21 +48,21 @@ const App = () => {
 
           <button onClick={handleCalculateButton}>Calcular</button>
         </div>
-        {!toShow && (
-          <div className={styles.rightSide}>
+        <div className={styles.rightSide}>
+          {!toShow && (
             <div className={styles.grid}>
               {levels.map((item, key) => (
                 <GridItem key={key} item={item} />
               ))}
             </div>
-          </div>
-        )}
-        {toShow && (
-          <div className={styles.rightBig}>
-            <div className={styles.rightArrow}></div>
-            <GridItem item={toShow} />
-          </div>
-        )}
+          )}
+          {toShow && (
+            <div className={styles.rightBig}>
+              <div className={styles.rightArrow}></div>
+              <GridItem item={toShow} />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
