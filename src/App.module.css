@@ -90,4 +90,9 @@ body {
     cursor: pointer;
     margin-left: -35px;
     margin-top: 145px;
+    transition: all ease .5s;
+}
+
+.container .rightSide .rightArrow:hover {
+    opacity: .8;
 }
